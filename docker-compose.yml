@@ -1,0 +1,18 @@
+version: "3"
+services:
+  postgres:
+    container_name: postgres
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - "/etc/postgresql"
+      - "/var/log/postgresql"
+      - "/var/lib/postgresql"
+    environment:
+      POSTGRES_HOST: postgres
+      POSTGRES_PASSWORD: pass
+      POSTGRES_USER: user
+      POSTGRES_DB: db
+    ports:
+      - 5432:5432
