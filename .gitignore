@@ -1,0 +1,12 @@
+# storm project configs
+.idea/*
+.idea/**/
+.DS_Store
+.vscode
+
+# exclude Idea project configs
+.idea/codeStyles/
+.idea/dictionaries/
+.idea/externalDependencies.xml
+.idea/misc.xml
+.idea/watcherTasks.xml
